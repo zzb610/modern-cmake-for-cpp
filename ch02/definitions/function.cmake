@@ -1,0 +1,12 @@
+function(MyFunc FirstArg)
+  message("Function Name: ${CMAKE_CURRENT_FUNCTION}")
+  message("Function File: ${CMAKE_CURRENT_FUNCTION_LIST_FILE}")
+  message("FirstArg: ${FirstArg}")
+  set(FirstArg "new value")
+  message("FirstArg Again: ${FirstArg}")
+  message("ARGV0 : ${ARGV0}  ARGV1 : ${ARGV1} ARGC : ${ARGC}")
+endfunction()
+
+set(FirstArg "first value")
+MyFunc("value1" "value2")
+message("FirstArg in global scope: ${FirstArg}")

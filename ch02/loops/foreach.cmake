@@ -18,7 +18,7 @@ foreach(num IN ZIP_LISTS L1 L2)
   message("num_0 = ${num_0}, num_1 = ${num_1}")
 endforeach()
 
-message("-------------")
+message("-------------")`
 
 foreach(num word IN ZIP_LISTS L1 L2)
   message("num = ${num}, word = ${word}")
