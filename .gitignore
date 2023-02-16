@@ -37,3 +37,6 @@ buildtree
 
 # vscode
 .vscode
+
+# clangd
+.cache
